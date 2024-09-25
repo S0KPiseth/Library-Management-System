@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.librarymanagementsystem.HelloController">
+   <children>
+      <Pane fx:id="logRegistPane" layoutX="385.0" layoutY="25.0" prefHeight="450.0" prefWidth="420.0" styleClass="customPane" stylesheets="@style.css">
+         <children>
+            <Label layoutX="99.0" layoutY="26.0" text="Sign up...">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField layoutX="99.0" layoutY="92.0" prefHeight="45.0" prefWidth="223.0" promptText="Username" styleClass="customText" stylesheets="@style.css" />
+            <TextField layoutX="99.0" layoutY="153.0" prefHeight="45.0" prefWidth="223.0" promptText="Oragization Email Adress" styleClass="customText" stylesheets="@style.css" />
+            <PasswordField layoutX="99.0" layoutY="215.0" prefHeight="45.0" prefWidth="223.0" promptText="Password" styleClass="customText" stylesheets="@style.css" />
+            <PasswordField layoutX="99.0" layoutY="273.0" prefHeight="45.0" prefWidth="223.0" promptText="Comfirm password" styleClass="customText" stylesheets="@style.css" />
+            <Button layoutX="99.0" layoutY="352.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="223.0" styleClass="customBtn" stylesheets="@style.css" text="Sign up" />
+            <Label layoutX="117.0" layoutY="406.0" text="Already have an account?" />
+            <Hyperlink layoutX="265.0" layoutY="403.0" onAction="#switchToLogin" text="Login" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

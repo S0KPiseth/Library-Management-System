@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.librarymanagementsystem.mainFrameController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="500.0" prefWidth="55.0" style="-fx-alignment: center;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="56.0" style="-fx-alignment: CENTER_LEFT;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox prefHeight="149.0" prefWidth="66.0" style="-fx-alignment: TOP_CENTER; -fx-spacing: 15;">
+                                 <children>
+                                    <Line fx:id="bookCategoriesPointer" endX="-99.99998474121094" endY="29.0" startX="-100.0" strokeWidth="5.0" visible="false" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></Line>
+                                    <Line fx:id="chatMessagePointer" endX="-99.99998474121094" endY="29.0" layoutX="112.0" layoutY="12.0" startX="-100.0" strokeWidth="5.0" visible="false" />
+                                    <Line fx:id="uploadBookPointer" endX="-99.99998474121094" endY="29.0" layoutX="112.0" layoutY="72.0" startX="-100.0" strokeWidth="5.0" visible="false" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: TOP_LEFT; -fx-spacing: 16;">
+                                 <children>
+                                    <ImageView fx:id="bookCategories" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onBookCategoriesClicked" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/icons8-book-48.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="chatMessage" fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#onChatMessageClicked" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/icons8-chat-96.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="uploadBook" fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="45.0" onDragDetected="#onUploadBookClicked" onMouseClicked="#onUploadBookClicked" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/icons8-upload-to-the-cloud-50.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-alignment: BOTTOM_CENTER;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Assets/icons8-logout-50.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="40.0" prefWidth="850.0" style="-fx-alignment: center;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="0.0" prefWidth="0.0" style="-fx-alignment: CENTER_LEFT;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Assets/icons8-menu-96.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></HBox>
+                  <HBox prefHeight="0.0" prefWidth="0.0" style="-fx-alignment: CENTER_RIGHT;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: CENTER_RIGHT;">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="116.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Assets/icons8-notification-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Assets/icons8-user-96.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: CENTER_RIGHT;">
+                           <children>
+                              <Button fx:id="iconBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-border-width: 0; -fx-background-color: white;">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/minus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="maxBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: white; -fx-border-width: 0;">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/maximize-2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="closeBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: white; -fx-border-width: 0;">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Assets/pause%20_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <VBox fx:id="mainBookContianer" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="tempPane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

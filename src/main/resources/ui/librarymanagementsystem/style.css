@@ -1,0 +1,107 @@
+
+/*.root{*/
+/*    -fx-background-insets: 12;*/
+/*    -fx-background-radius: 6;*/
+/*}*/
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('ui/librarymanagementsystem/Assets/SpaceGrotesk-Bold.ttf') format("truetype");
+}
+
+.customPane{
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: white;
+}
+
+.customText {
+    -fx-font-family: 'Helvetica';
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #616161 transparent;
+    -fx-border-width: 2;
+    -fx-border-insets: 0 0 1 0;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-cursor: text;
+    -fx-padding: 0.166667em 0em 0.333333em 0em;
+}
+.customText:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent lightblue transparent;
+    -fx-border-width: 2;
+    -fx-border-insets: 0 0 1 0;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-cursor: text;
+    -fx-padding: 0.166667em 0em 0.333333em 0em;
+
+}
+.customBtn {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-width: 0;
+    -fx-background-color: 'black';
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 0.166667em 0em 0.333333em 0em;
+}
+.bookName{
+    -fx-font-family: 'Space Grotesk';
+    -fx-padding: 0;
+    -fx-margin: 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-alignment: right;
+}
+
+/*Scroll bar*/
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
