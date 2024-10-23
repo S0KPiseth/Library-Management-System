@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.librarymanagementsystem.mainFrameController">
    <children>
@@ -84,6 +86,14 @@
                               <Insets left="10.0" />
                            </HBox.margin>
                         </ImageView>
+                        <TextField promptText="Search" style="-fx-background-radius: 20; -fx-background-insets: .5;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="SansSerif Regular" size="18.0" />
+                           </font>
+                        </TextField>
                      </children>
                      <opaqueInsets>
                         <Insets />

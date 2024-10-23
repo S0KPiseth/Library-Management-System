@@ -76,7 +76,7 @@ public class genreController implements Initializable {
 
     }
     public static void getBooksByGenre(double genreInput, List<String> bookNames, List<String> authors, boolean option) {
-        String filePath ="C:\\Users\\User\\Desktop\\deskstop icon\\Piseth-SoK\\01 Project\\ITM 201\\4_Assignments\\Final _Java\\libraryManagementSystem\\src\\main\\resources\\ui\\librarymanagementsystem\\Assets\\clean_books.csv";
+        String filePath ="src/main/resources/ui/librarymanagementsystem/Assets/clean_books.csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
